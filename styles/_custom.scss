@@ -1,0 +1,117 @@
+@import "./select";
+button,
+.btn,
+.btn-r {
+  border: 1px solid $blue;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 5px;
+  text-align: center;
+  @include afs(16px, 16px, 14px);
+  outline: none;
+  // transition: 0.3s;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: $blue;
+  color: $white;
+  &:hover {
+    background-color: #00d1ff;
+    border-color: #00d1ff;
+  }
+  &.clicked {
+    border-color: #44b3d8;
+    background-color: #44b3d8;
+    color: white;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.btn-r {
+  background-color: transparent;
+  color: $blue;
+  &:hover {
+    border-color: #00d1ff;
+    color: #00d1ff;
+  }
+  &.clicked {
+    border-color: #44b3d8;
+    color: #44b3d8;
+  }
+}
+
+.btn-group {
+  display: flex;
+  .mr-1 {
+    margin-right: 34px;
+  }
+}
+
+@include mq($SmTableWidth, max) {
+  .btn-group {
+    display: flex;
+    .mr-1 {
+      margin-right: 14px;
+    }
+
+    .btn,
+    .btn-r {
+      width: 165px;
+    }
+  }
+}
+
+@include mq($PhoneWidth, max) {
+  .btn-group {
+    flex-direction: column;
+    .mr-1 {
+      margin: 0rem;
+      margin-bottom: 14px;
+    }
+
+    .btn,
+    .btn-r {
+      width: 100%;
+    }
+  }
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: $grey_d;
+  padding: 1rem;
+  border-bottom: 1px solid $white;
+  margin-bottom: 25px;
+  @include afs(14px, 14px, 12px);
+}
+
+input::-webkit-input-placeholder,
+input:-moz-placeholder {
+  @include afs(14px, 14px, 12px);
+}
+
+textarea {
+  resize: none;
+  background-color: transparent;
+  border-bottom: 1px solid $grey_l;
+  padding: 1rem;
+  width: 100%;
+  color: $grey_d;
+  min-height: 150px;
+  margin-bottom: 64px;
+  @include afs(14px, 14px, 12px);
+}
+
+textarea::-webkit-input-placeholder,
+textarea:-moz-placeholder {
+  color: $grey_d;
+  @include afs(14px, 14px, 12px);
+}

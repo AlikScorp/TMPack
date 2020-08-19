@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polypropilene</title>
+    <link rel="stylesheet" href="/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+      <div class="loading">
+        <img class="order close" src="/ui/close.png" alt="X" />
+
+        <div class="modal bg-black a-centr j-centr">
+            <div class="center">
+                <section>
+                    <div class='sk-circle-bounce'>
+                    <div class='sk-child sk-circle-1'></div>
+                    <div class='sk-child sk-circle-2'></div>
+                    <div class='sk-child sk-circle-3'></div>
+                    <div class='sk-child sk-circle-4'></div>
+                    <div class='sk-child sk-circle-5'></div>
+                    <div class='sk-child sk-circle-6'></div>
+                    <div class='sk-child sk-circle-7'></div>
+                    <div class='sk-child sk-circle-8'></div>
+                    <div class='sk-child sk-circle-9'></div>
+                    <div class='sk-child sk-circle-10'></div>
+                    <div class='sk-child sk-circle-11'></div>
+                    <div class='sk-child sk-circle-12'></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="layer order"></div>
+    </div> 
+
+    <div class="dialogue">
+      <img class="order close" src="/ui/close.png" alt="X" />
+
+      <div class="modal bg-black a-centr j-centr">
+        <div class="center">
+          <div class="fs-56 cl-blue mb-2" style="color: #00D1FF; text-transform: uppercase; font-weight: bold;">request accepted</div>
+          <div class="cl-white fs-26" style="font-weight: 300;">Our manager will be through with your within 24 hours</div>
+        </div>
+      </div>
+      <div class="layer order"></div>
+    </div>
+
+    <!-- header -->
+    <header id="header">
+      <!-- логотип -->
+      <div class="logo pointer">
+        <img src="/img/logo.png" alt="logo" />
+      </div>
+      <!-- логотип -->
+
+      <!-- меню бургер -->
+      <div class="burger-menu">
+        <img class="burger-btn" src="/ui/close.png" alt="X" />
+
+        <img class="logo" src="/img/logo.png" width="50px" alt="logo" />
+
+        <nav class="links">
+          <a class="burger-btn" href="#about">About</a>
+          <a class="burger-btn" href="#production">Products</a>
+          <a class="burger-btn" href="#condition">Conditions</a>
+          <a class="burger-btn" href="#pre-order">Pre-order</a>
+          <div class="between lang">
+            <div class="pointer cl-grey_d mr-1"><a href="/">RU</a></div>
+            <div class="pointer"><a href="/en/">EN</a></div>
+          </div>
+        </nav>
+      </div>
+      <!-- меню бургер -->
+
+      <nav class="flex">
+        <div class="call-menu">
+          <form class="flex a-centr" id='call-request-form' action="">
+            <div class="flex a-centr">
+              <div class="tel">
+                <img src="/ui/pluse.png" alt="pluse" />
+                <select id="call-request-prefix" class="mr-1" name="phone_prefix">
+                  <option value="994">994</option>
+                  <option value="373">373</option>
+                  <option value="374">374</option>
+                  <option selected value="7">7</option>
+                  <option value="375">375</option>
+                  <option value="992">992</option>
+                  <option value="993">993</option>
+                  <option value="996">996</option>
+                  <option value="380">380</option>
+                  <option value="371">371</option>
+                  <option value="998">998</option>
+                  <option value="370">370</option>
+                  <option value="372">372</option>
+                </select>
+              </div>
+
+              <input id="call-request-phone" class="mr-1" placeholder="Номер телефона" type="text" name="phone_number" required/>
+            </div>
+            <button id="submit-call-menu" type="submit" class="btn mr-2 sendCall">
+              <div class="sendWord" style="display: block;">Send</div>
+              <div class="sendInProgress" style="display: none;">
+                <section>
+                  <div class='sk-circle-bounce' style="width: 2em; height: 2em;">
+                    <div class='sk-child sk-circle-1'></div>
+                    <div class='sk-child sk-circle-2'></div>
+                    <div class='sk-child sk-circle-3'></div>
+                    <div class='sk-child sk-circle-4'></div>
+                    <div class='sk-child sk-circle-5'></div>
+                    <div class='sk-child sk-circle-6'></div>
+                    <div class='sk-child sk-circle-7'></div>
+                    <div class='sk-child sk-circle-8'></div>
+                    <div class='sk-child sk-circle-9'></div>
+                    <div class='sk-child sk-circle-10'></div>
+                    <div class='sk-child sk-circle-11'></div>
+                    <div class='sk-child sk-circle-12'></div>
+                  </div>
+                </section>
+              </div> 
+              <div class="readyWord" style="display: none;">&#10004;</div>
+            </button>
+            <img class="call-menu-btn-c close pointer" src="/ui/close.png" alt="X" />
+            <img class="logo show-for-phone-only" src="/img/logo.png" width="50px" alt="logo" />
+          </form>
+        </div>
+
+        <!-- меню -->
+        <ul class="mr-2 show-for-desktop">
+          <li><a href="#about">About</a></li>
+          <li><a href="#production">Products</a></li>
+          <li><a href="#condition">Conditions</a></li>
+          <li><a href="#pre-order">Pre-order</a></li>
+        </ul>
+        <!-- меню -->
+
+        <button id="request-call-button" class="btn-r fs-14 mr-2 call-menu-btn-o">Request a call</button>
+
+        <!-- иконка телефона -->
+        <div class="call-menu-btn-o tel_icon mr-2 pointer">
+          <img src="/ui/phone.png" alt="telephone" />
+        </div>
+        <!-- иконка телефона -->
+
+        <!-- кнопка бургер -->
+        <div class="pointer hide-for-desktop burger-btn">
+          <img src="/ui/burger.png" alt="burger" />
+        </div>
+        <!-- кнопка бургер -->
+
+        <!-- языки -->
+        <div class="flex lang show-for-desktop">
+          <div class="pointer cl-grey_d mr-1"><a href="/">RU</a></div>
+          <div>EN</div>
+        </div>
+        <!-- языки -->
+      </nav>
+    </header>
+    <!-- header -->
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="j-end">
+        <div class="j-start">
+          <div class="j-centr">
+            <h1 class="cl-blue up fw-b">Polypropilene</h1>
+            <h3 class=" cl-white fw-300 up">BAGS, TWINES AND SLEEVES FOR BIG BAGS</h3>
+            <h5 class=" mb-3 cl-white fw-300">From the manufacturer’s warehouse, large and small wholesale</h5>
+            <div class="btn-group">
+              <a href="#pre-order" class="mr-1 btn">Place an order</a>
+              <button class="btn-r" hreflang='en'>Download prices</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner -->
+
+    <!-- первый блок -->
+    <section id="about" class="first flex lato-l mb-5">
+      <div class="text fs-18">
+        <p class="fs-18">&laquo;TMPAK&raquo; company is a representative of the largest group of manufacturers of polypropylene bags in Turkmenistan. We offer the highest quality products from primary raw materials for wholesale.</p>
+        <p class="fs-18">We offer the highest quality products from primary raw materials for wholesale.</p>
+        <p class="fs-18">A large assortment of polypropylene bags, sleeves for big bags and hay binding twines of different sizes.</p>
+        <p class="fs-18">&laquo;TMPAK&raquo; company uses equipment from companies such as Starlinger and Lohia Corp.</p>
+        <p class="fs-18">Starlinger and Lohia Corp are world leaders in the manufacturing of industrial plants for the manufacture of bags, packaging fabrics and technical textiles.</p>
+      </div>
+
+      <div class="image">
+        <img src="/img/01.jpg" alt="img" />
+      </div>
+    </section>
+    <!-- первый блок -->
+
+    <!-- продукция -->
+    <section id="production" class="production">
+      <div class="container">
+        <div class="title other-info">
+          <h2 class="up fw-b fs-56">Products</h2>
+          <h4 class="fw-300">Varieties of bags and big bags</h4>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="image first">
+          <img src="/img/02.jpg" alt="img" />
+          <h3 class="fs-56 vertical-text">Handless bag</h3>
+        </div>
+
+        <div class="info">
+          <div class="inner">
+            <div class="selects">
+              <div class="mr-1">
+                <div class="fw-b fs-20">Size</div>
+                <select class="productSize">
+                  <option selected disabled>sm</option>
+                  <option value="55*105">55*105</option>
+                  <option value="95*50">95*50</option>
+                  <option value="45*85">45*85</option>
+                  <option value="95*45">95*45</option>
+                </select>
+              </div>
+              <div>
+                <div class="fw-b fs-20">Weight</div>
+                <select class="productWeight">
+                  <option selected disabled>g</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="a-centr devider">
+              <h5 class="fw-b mr-1">Unit price</h5>
+              <span class="fs-14 cl-grey_l"><span class="productPrice"></span>USD</span>
+            </div>
+
+            <div class="information">
+              
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Color</div>
+                <p class="fw-300">White</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Price per ton</div>
+                <p class="fw-300">From USD 1200</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Packaging</div>
+                <p class="fw-300">Stacks per 500 pcs</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Fabric</div>
+                <p class="fw-300">Sleeve type</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Type of raw</div>
+                <p class="fw-300">Primary</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Bottom</div>
+                <p class="fw-300">Roll up. One seam.</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <div class="other-info">
+          <p class="mb-1 fw-300">Polypropylene bags from 50 g are included in the assortment of typical products of &laquo;TMPAK&raquo; company.<br />They are designed for transportation and storage of various bulk products.</p>
+          <p class="mb-1 fw-300">The best option for packaging various bulk products (flour, cereals, salt, animal feed, chalk, etc.).</p>
+          <p class="fw-b">In addition to standard parameters, “TMPAK” company manufactures the product in various ranges according to individual terms of reference, depending on the requirements of the buyer.</p>
+          <div class="btn-group firstGrp">
+            <a href="#pre-order" class="mr-1 btn">Place an order</a>
+            <button class="btn-r" hreflang='en'>Download prices</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="production second">
+      <div class="flex">
+        <div class="info">
+          <div class="inner">
+            <div class="selects">
+              <div class="mr-1">
+                <div class="fw-b fs-20">Size</div>
+                <select class="productSize">
+                  <option selected disabled>sm</option>
+                  <option value="55*105">55*105</option>
+                  <option value="95*50">95*50</option>
+                  <option value="45*85">45*85</option>
+                  <option value="95*45">95*45</option>
+                </select>
+              </div>
+              <div>
+                <div class="fw-b fs-20">Weight</div>
+                <select class="productWeight">
+                  <option selected disabled>g</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="a-centr devider">
+              <h5 class="fw-b mr-1">Unit price</h5>
+              <span class="fs-14 cl-grey_l"><span class="productPrice"></span>USD</span>
+            </div>
+
+            <div class="information">
+              
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Color</div>
+                <p class="fw-300">White</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Price per ton</div>
+                <p class="fw-300">From 1200 USD</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Packaging</div>
+                <p class="fw-300">Stacks per 500 pcs</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Fabric</div>
+                <p class="fw-300">Sleeve type</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Type of raw</div>
+                <p class="fw-300">Primary</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Bottom</div>
+                <p class="fw-300">Roll up. One seam.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="/img/03.jpg" alt="img" />
+          <h3 class="fs-56 vertical-text">Liner bag</h3>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <div class="other-info">
+          <p class="mb-1 fw-300">&laquo;TMPAK&raquo; company produces liner polypropylene bags, which are used for packaging such bulk products as salt, sugar, flour, animal feed, various chemicals, fertilizers, asbestos and so on.</p>
+          <p class="fw-b">In addition to standard parameters, &laquo;TMPAK&raquo; company manufactures the product in various ranges according to individual terms of reference, depending on the requirements of the buyer.</p>
+          <div class="btn-group">
+            <a href="#pre-order" class="mr-1 btn">Place an order</a>
+            <button class="btn-r" hreflang='en'>Download prices</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="production third">
+      <div class="flex">
+        <div class="image first">
+          <img src="/img/04.jpg" alt="img" />
+          <h3 class="vertical-text">Sleeve for big bag</h3>
+        </div>
+
+        <div class="info">
+          <div class="inner">
+            <div class="description">
+              <p class="fw-300">&laquo;TMPAK&raquo; company produces high-quality sleeves on modern equipment, due to which uniformity of weaving of the fabric is achieved.</p>
+              <p class="fw-300">Bags made of polypropylene sleeves do not have side seams, the sleeve is easy to cut. The cost of products from a polypropylene sleeve is low: many manufacturers need economical packaging.</p>
+              <p class="fw-300">The main advantage of fabric is durability.</p>
+              <p class="fw-b">In addition to standard parameters, &laquo;TMPAK&raquo; company manufactures the product in various ranges according to individual terms of reference, depending on the requirements of the buyer.</p>
+            </div>
+
+            <div class="information">
+          
+              <div class="mb-2">
+                <div class="fw-b fs-20">Width range</div>
+                <p class="fw-300">From 1 to 2 m</p>
+              </div>
+  
+              <div class="mb-2">
+                <div class="fw-b fs-20">Color</div>
+                <p class="fw-300">White</p>
+              </div>
+  
+              <div class="mb-2">
+                <div class="fw-b fs-20">Density</div>
+                <p class="fw-300">from 100 to 200 kg per m<sup>2</sup></p>
+              </div>
+  
+              <div class="mb-2">
+                <div class="fw-b fs-20">Price per kg</div>
+                <p class="fw-300">1.5&nbsp;USD</p>
+              </div>
+            </div>
+            <div class="btn-group">
+              <a href="#pre-order" class="mr-1 btn">Place an order</a>
+              <button class="btn-r" hreflang='en'>Download prices</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="production fouth">
+      <div class="flex">
+        <div class="info">
+          <div class="inner">
+            <div class="description">
+              <p class="fw-300">High-quality polypropylene twine (hay binding) made from primary polypropylene. This type of twine is widely used in the agricultural sector for bale of hay, straw, green feed, as well as for manual and automatic winding of finished rolls and bales.</p>
+              <p class="fw-b">In addition to standard parameters, &laquo;TMPAK&raquo; company manufactures the product in various ranges according to individual terms of reference, depending on the requirements of the buyer.</p>
+            </div>
+
+            <div class="information">
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Bobbin weight</h5>
+                <p class="fs-16 fw-300">4-5kg &plusmn;3%</p>
+              </div>
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Price per ton</h5>
+                <p class="fs-16 fw-300">1,360 USD</p>
+              </div>
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Thread density</h5>
+                <p class="fs-16 fw-300">18&nbsp;000 DEN</p>
+              </div>
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Thread length</h5>
+                <p class="fs-16 fw-300">1 kg = max 555&nbsp;m</p>
+              </div>
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Color</h5>
+                <p class="fs-16 fw-300">White</p>
+              </div>
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Capacity</h5>
+                <p class="fs-16 fw-300">98&nbsp;kg</p>
+              </div>
+
+            </div>
+
+            <div class="btn-group">
+              <a href="#pre-order" class="mr-1 btn">Place an order</a>
+              <button class="btn-r" hreflang='en'>Download prices</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="/img/05.jpg" alt="img" />
+          <h3 class="vertical-text">TWINE</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- продукция -->
+
+    <!-- условия -->
+    <div class="container title">
+      <h2 class="fw-b fs-56" id="condition">CONDITIONS</h2>
+      <h4 class="fw-300">Payment and delivery</h4>
+    </div>
+
+    <section class="condition">
+      <img class="mainImage" src="/img/06.png" alt="img" />
+      <div class="text cl-white bg-black">
+        <h2>&laquo;TMPAK&raquo; company organizes delivery throughout Russia and the CIS countries</h2>
+        <div class="fs-18 h6">The total minimum weight allowed for shipment is 22 tons.</div>
+        <div class="fs-18">It is possible to produce products according to individual terms of reference, which differs from the standard parameters of products manufactured by &laquo;TMPAK&raquo; company.</div>
+      </div>
+    </section>
+
+    <div class="container condition mt-1">
+      <div class="between">
+        <div class="jumbutron">
+          <div class="a-start">
+            <img src="/ui/bag.png" alt="bag" />
+            <h4>CONDITIONS<br class="to-line"> OF PAYMENT</h4>
+          </div>
+          <p class="fs-18">After the placing of the order through the company manager, an advance payment of 50% of the total amount of the order is made.</p>
+          <p class="fs-18">The remaining 50% is paid by the buyer at the end of loading the vehicle and sending it to its destination.</p>
+          <p class="fs-18">After the conclusion of the contract, an invoice is issued for bank transfer.</p>
+        </div>
+
+        <div class="jumbutron">
+          <div class="a-start">
+            <img src="/ui/bus.png" alt="bus" />
+            <h4>CONDITIONS OF DELIVERY</h4>
+          </div>
+          <p class="fs-18">The conditions of delivery of the order may vary depending on the distance, volume and urgency.</p>
+          <p class="fs-18">Delivery times are agreed individually.</p>
+          <p class="fs-18">Delivery is carried out using transport companies, according to their tariff.</p>
+          <p class="fs-18">You can order delivery at any transport company that is convenient for you.</p>
+          <p class="fs-18">Delivery terms are EXW and DAP</p>
+        </div>
+      </div>
+    </div>
+    <!-- условия -->
+
+    <!-- предзаказ -->
+    <section class="pre-order">
+      <div class="container title">
+        <div class="fw-b fs-56" id="pre-order">PRE-ORDER</div>
+        <h4 class="fs-26 fw-300">Complete the form and receive a commercial proposal</h4>
+      </div>
+
+      <div class="jumbotron">
+        <form action="" method="POST" id="order_form">
+          <input id="first_name" placeholder="First name" type="text" name="first_name" />
+          <input id="last_name" placeholder="Last name" type="text" name="last_name" />
+          <input id="email" placeholder="E-mail" type="E-mail" name="email" />
+          <div class="flex a-centr group">
+            <div class="tel">
+              <img src="/ui/pluse.png" alt="pluse" />
+              <select id="phone_prefix" class="select" name="phone_prefix">
+                <option selected value="7">7</option>
+                <option value="994">994</option>
+                <option value="373">373</option>
+                <option value="374">374</option>
+                <option value="375">375</option>
+                <option value="992">992</option>
+                <option value="993">993</option>
+                <option value="996">996</option>
+                <option value="380">380</option>
+                <option value="371">371</option>
+                <option value="998">998</option>
+                <option value="370">370</option>
+                <option value="372">372</option>
+              </select>
+            </div>
+
+            <input id="phone_number" class="mb-0" type="text" placeholder="Phone number" name="phone_number" />
+          </div>
+
+          <div class="flex group col">
+            <input id="country" class="mr-2" type="text" placeholder="Country" name="country" />
+            <input id="city" type="text" placeholder="City" name="city" />
+          </div>
+
+          <div class="fs-14 mb-2 lh-30">Send individual terms of reference, different from the standard parameters of the products manufactured by &laquo;TMPAK&raquo; company</div>
+          <div class="cl-blue fs-16 fw-b">
+            <label for="file" class="fileText pointer">Select file</label>
+            <input id="file" type="file" class="file pointer" name="file" />
+          </div>
+
+          <textarea id="message" placeholder="Text" name="message"></textarea>
+
+          <button id="submit-form" form="order_form" type="reset" class="btn">Place an order</button>
+        </form>
+  
+      </div>
+    </section>
+    <!-- предзаказ -->
+
+    <footer>
+      <div class="container">
+        <div class="flex firstFlex">
+          <nav class="menu">
+            <!-- логотип -->
+            <div class="logo pointer">
+              <img src="/img/logo.png" alt="logo" />
+            </div>
+            <!-- логотип -->
+            <div class="fs-14 cl-white link">
+              <a href="#about">About</a>
+            </div>
+            <div class="fs-14 cl-white link">
+              <a href="#production">Products</a>
+            </div>
+            <div class="fs-14 cl-white link">
+              <a href="#condition">Conditions</a>
+            </div>
+            <div class="fs-14 cl-white link">
+              <a href="#pre-order">Pre-order</a>
+            </div>
+          </nav>
+
+          <div class="contacts">
+            <div class="flex contact_item">
+              <div class="cl-blue fs-14">Address</div>
+              <div class="cl-white fs-14">Turkmenistan, Ashgabat, Ankara&nbsp;10</div>
+            </div>
+
+            <div class="flex contact_item">
+              <div class="cl-blue fs-14">Phone</div>
+              <div>
+                <div class="cl-white tel_num fs-14">+7 495 12700828</div>
+                <div class="cl-white tel_num fs-14">+993 12 491281</div>
+              </div>
+            </div>
+
+            <div class="flex contact_item">
+              <div class="cl-blue fs-14">Mobile</div>
+              <div>
+                <div class="cl-white tel_num fs-14">+993 63 203339</div>
+                <div class="cl-white tel_num fs-14">+993 63 209339</div>
+                <div class="cl-white tel_num fs-14">+993 63 136556</div>
+              </div>
+            </div>
+
+            <div class="flex contact_item">
+              <div class="cl-blue fs-14">Fax</div>
+              <div class="cl-white fs-14">+993 12 491281</div>
+            </div>
+
+            <div class="flex contact_item">
+              <div class="cl-blue fs-14">E-mail</div>
+              <div class="cl-white fs-14">export@tmpack.biz</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container under mt-2 pt-2 a-centr between">
+        <div class="flex">
+          <a href="https://www.facebook.com/TMPack.biz" target="_blank">
+            <img src="/social/facebook.png" alt="Facebook" title="Facebook" />
+          </a>
+          <a href="https://wa.me/qr/4SPRXY4SISPID1" target="_blank">
+            <img src="/social/whatsapp.png" alt="WhatsApp" title="WhatsApp" />
+          </a>
+          <a href="https://www.instagram.com/tmpack.biz/" target="_blank">
+            <img src="/social/instagram.png" alt="Instagram" title="Instagram" />
+          </a>
+        </div>
+
+        <div class="cl-grey_d fs-14">&copy; TMPACK, 2020</div>
+      </div>
+    </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/select.js  "></script>
+  </body>
+</html>

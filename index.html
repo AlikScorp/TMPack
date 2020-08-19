@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polypropilene</title>
+    <link rel="stylesheet" href="/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+      <div class="loading">
+        <img class="order close" src="ui/close.png" alt="X" />
+
+        <div class="modal bg-black a-centr j-centr">
+            <div class="center">
+                <section>
+                    <div class='sk-circle-bounce'>
+                    <div class='sk-child sk-circle-1'></div>
+                    <div class='sk-child sk-circle-2'></div>
+                    <div class='sk-child sk-circle-3'></div>
+                    <div class='sk-child sk-circle-4'></div>
+                    <div class='sk-child sk-circle-5'></div>
+                    <div class='sk-child sk-circle-6'></div>
+                    <div class='sk-child sk-circle-7'></div>
+                    <div class='sk-child sk-circle-8'></div>
+                    <div class='sk-child sk-circle-9'></div>
+                    <div class='sk-child sk-circle-10'></div>
+                    <div class='sk-child sk-circle-11'></div>
+                    <div class='sk-child sk-circle-12'></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="layer order"></div>
+    </div> 
+
+    <div class="dialogue">
+      <img class="order close" src="/ui/close.png" alt="X" />
+
+      <div class="modal bg-black a-centr j-centr">
+        <div class="center">
+          <div class="fs-56 cl-blue mb-2" style="color: #00D1FF; text-transform: uppercase; font-weight: bold;">заявка принята</div>
+          <div class="cl-white fs-26" style="font-weight: 300;">Наш менеджер свяжется с Вами в течении 24 часов</div>
+        </div>
+      </div>
+      <div class="layer order"></div>
+    </div>
+
+    <!-- header -->
+    <header id="header">
+      <!-- логотип -->
+      <div class="logo pointer">
+        <img src="/img/logo.png" alt="logo" />
+      </div>
+      <!-- логотип -->
+
+      <!-- меню бургер -->
+      <div class="burger-menu">
+        <img class="burger-btn" src="/ui/close.png" alt="X" />
+
+        <img class="logo" src="/img/logo.png" width="50px" alt="logo" />
+
+        <nav class="links">
+          <a class="burger-btn" href="#about">О КОМПАНИИ</a>
+          <a class="burger-btn" href="#production">ПРОДУКЦИЯ</a>
+          <a class="burger-btn" href="#condition">УСЛОВИЯ</a>
+          <a class="burger-btn" href="#pre-order">ПРЕДЗАКАЗ</a>
+          <div class="between lang">
+            <div class="pointer mr-1"><a href="/">RU</a></div>
+            <div class="pointer cl-grey_d"><a href="/en/">EN</a></div>
+          </div>
+        </nav>
+      </div>
+      <!-- меню бургер -->
+
+      <nav class="flex">
+        <div class="call-menu">
+          <form class="flex a-centr" id='call-request-form' action="">
+            <div class="flex a-centr">
+              <div class="tel">
+                <img src="/ui/pluse.png" alt="pluse" />
+                <select id="call-request-prefix" class="mr-1" name="phone_prefix">
+                  <option value="994">994</option>
+                  <option value="373">373</option>
+                  <option value="374">374</option>
+                  <option selected value="7">7</option>
+                  <option value="375">375</option>
+                  <option value="992">992</option>
+                  <option value="993">993</option>
+                  <option value="996">996</option>
+                  <option value="380">380</option>
+                  <option value="371">371</option>
+                  <option value="998">998</option>
+                  <option value="370">370</option>
+                  <option value="372">372</option>
+                </select>
+              </div>
+
+              <input id="call-request-phone" class="mr-1" placeholder="Номер телефона" type="text" name="phone_number" required/>
+            </div>
+            <button id="submit-call-menu" type="submit" class="btn mr-2 sendCall">
+              <div class="sendWord" style="display: block;">Отправить</div>
+              <div class="sendInProgress" style="display: none;">
+                <section>
+                  <div class='sk-circle-bounce' style="width: 2em; height: 2em;">
+                    <div class='sk-child sk-circle-1'></div>
+                    <div class='sk-child sk-circle-2'></div>
+                    <div class='sk-child sk-circle-3'></div>
+                    <div class='sk-child sk-circle-4'></div>
+                    <div class='sk-child sk-circle-5'></div>
+                    <div class='sk-child sk-circle-6'></div>
+                    <div class='sk-child sk-circle-7'></div>
+                    <div class='sk-child sk-circle-8'></div>
+                    <div class='sk-child sk-circle-9'></div>
+                    <div class='sk-child sk-circle-10'></div>
+                    <div class='sk-child sk-circle-11'></div>
+                    <div class='sk-child sk-circle-12'></div>
+                  </div>
+                </section>
+              </div> 
+              <div class="readyWord" style="display: none;">&#10004;</div>
+            </button>
+            <img class="call-menu-btn-c close pointer" src="/ui/close.png" alt="X" />
+            <img class="logo show-for-phone-only" src="/img/logo.png" width="50px" alt="logo" />
+          </form>
+        </div>
+
+        <!-- меню -->
+        <ul class="mr-2 show-for-desktop">
+          <li><a href="#about">О КОМПАНИИ</a></li>
+          <li><a href="#production">ПРОДУКЦИЯ</a></li>
+          <li><a href="#condition">УСЛОВИЯ</a></li>
+          <li><a href="#pre-order">ПРЕДЗАКАЗ</a></li>
+        </ul>
+        <!-- меню -->
+
+        <button id="request-call-button" class="btn-r fs-14 mr-2 call-menu-btn-o">Заказать звонок</button>
+
+        <!-- иконка телефона -->
+        <div class="call-menu-btn-o tel_icon mr-2 pointer">
+          <img src="/ui/phone.png" alt="telephone" />
+        </div>
+        <!-- иконка телефона -->
+
+        <!-- кнопка бургер -->
+        <div class="pointer hide-for-desktop burger-btn">
+          <img src="/ui/burger.png" alt="burger" />
+        </div>
+        <!-- кнопка бургер -->
+
+        <!-- языки -->
+        <div class="flex lang show-for-desktop">
+          <div class="pointer mr-1"><a href="/">RU</a></div>
+          <div class="pointer cl-grey_d"><a href="/en/">EN</a></div>
+        </div>
+        <!-- языки -->
+      </nav>
+    </header>
+    <!-- header -->
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="j-end">
+        <div class="j-start">
+          <div class="j-centr">
+            <h1 class="cl-blue up fw-b">Полипропиленовые</h1>
+            <h3 class=" cl-white fw-300 up">мешки, шпагаты и рукава для БИГ БЭГов</h3>
+            <h5 class=" mb-3 cl-white fw-300">Со склада производителя крупным и мелким оптом</h5>
+            <div class="btn-group">
+              <a href="#pre-order" class="mr-1 btn">Оформить заказ</a>
+              <button class="btn-r" hreflang='ru'>Скачать цены</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner -->
+
+    <!-- первый блок -->
+    <section id="about" class="first flex lato-l mb-5">
+      <div class="text fs-18">
+        <p class="fs-18">
+          Компания &laquo;ТМПАК&raquo; является представителем крупнейшей группы
+          производителей полипропиленовых мешков в Туркменистане.
+        </p>
+
+        <p class="fs-18">
+          Мы предлагаем продукцию высочайшего качества из первичного сырья для
+          оптовых продаж.
+        </p>
+
+        <p class="fs-18">
+          Большой ассортимент полипропиленовых мешков, рукавов для биг бэгов и
+          сеновязальных шпагатов разных размеров.
+        </p>
+
+        <p class="fs-18">
+          Компания &laquo;ТМПАК&raquo; использует оборудование таких компаний как Starlinger
+          и Lohia Corp.
+        </p>
+
+        <p class="fs-18">
+          Компании Starlinger и Lohia Corp – лидеры мирового рынка по производву
+          промышленных установок для изготовления мешков, упаковочной ткани и
+          технического текстиля.
+        </p>
+      </div>
+
+      <div class="image">
+        <img src="/img/01.jpg" alt="img" />
+      </div>
+    </section>
+    <!-- первый блок -->
+
+    <!-- продукция -->
+    <section id="production" class="production">
+      <div class="container">
+        <div class="title other-info">
+          <h2 class="up fw-b fs-56">ПРОДУКЦИЯ</h2>
+          <h4 class="fw-300">Разновидности мешков и биг бэгов</h4>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="image first">
+          <img src="/img/02.jpg" alt="img" />
+          <h3 class="fs-56 vertical-text">Мешок без ручек</h3>
+        </div>
+
+        <div class="info">
+          <div class="inner">
+            <div class="selects">
+              <div class="mr-1">
+                <div class="fw-b fs-20">Размер</div>
+                <select class="productSize">
+                  <option selected disabled>см</option>
+                  <option value="55*105">55*105</option>
+                  <option value="95*50">95*50</option>
+                  <option value="45*85">45*85</option>
+                  <option value="95*45">95*45</option>
+                </select>
+              </div>
+              <div>
+                <div class="fw-b fs-20">Вес</div>
+                <select class="productWeight">
+                  <option selected disabled>г</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="a-centr devider">
+              <h5 class="fw-b mr-1">Цена за шт</h5>
+              <span class="fs-14 cl-grey_l"><span class="productPrice"></span> долл США</span>
+            </div>
+
+            <div class="information">
+              
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Цвет</div>
+                <p class="fw-300">Белый</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Цена за тонну</div>
+                <p class="fw-300">от 1200 долл. США</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Упаковка</div>
+                <p class="fw-300">Кипы по 500 штук</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Ткань</div>
+                <p class="fw-300">Рукавного типа</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Тип сырья</div>
+                <p class="fw-300">Первичный</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Дно</div>
+                <p class="fw-300">Подворот. Одна строчка</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <div class="other-info">
+          <p class="mb-1 fw-300">
+            Полипропиленовые мешки от 50 гр. входят в ассортимент типовой
+            продукции компании «ТМПАК». Предназначены для перевозки и хранения
+            различных сыпучих продуктов.
+          </p>
+          <p class="mb-1 fw-300">
+            Оптимальный вариант для фасовки различной сыпучей продукции (мука,
+            крупы, соль, комбикорм, мел и&nbsp;т.д.).
+          </p>
+          <p class="fw-b">
+            Помимо стандартных параметров, компания «ТМПАК» изготавливает
+            продукт в различных диапазонах по индивидуальному техническому
+            заданию, в зависимости от требований покупателя.
+          </p>
+          <div class="btn-group firstGrp">
+            <a href="#pre-order" class="mr-1 btn">Оформить заказ</a>
+            <button class="btn-r" hreflang='ru'>Скачать цены</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="production second">
+      <div class="flex">
+        <div class="info">
+          <div class="inner">
+            <div class="selects">
+              <div class="mr-1">
+                <div class="fw-b fs-20">Размер</div>
+                <select class="productSize">
+                  <option selected disabled>см</option>
+                  <option value="55*105">55*105</option>
+                  <option value="95*50">95*50</option>
+                  <option value="45*85">45*85</option>
+                  <option value="95*45">95*45</option>
+                </select>
+              </div>
+              <div>
+                <div class="fw-b fs-20">Вес</div>
+                <select class="productWeight">
+                  <option selected disabled>г</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="a-centr devider">
+              <h5 class="fw-b mr-1">Цена за шт</h5>
+              <span class="fs-14 cl-grey_l"><span class="productPrice"></span>  долл США</span>
+            </div>
+
+            <div class="information">
+              
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Цвет</div>
+                <p class="fw-300">Белый</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Цена за тонну</div>
+                <p class="fw-300">от 1200 долл. США</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Упаковка</div>
+                <p class="fw-300">Кипы по 500 штук</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Ткань</div>
+                <p class="fw-300">Рукавного типа</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Тип сырья</div>
+                <p class="fw-300">Первичный</p>
+              </div>
+
+              <div class="mb-2">
+                <div class="fs-20 fw-b">Дно</div>
+                <p class="fw-300">Подворот. Одна строчка</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="/img/03.jpg" alt="img" />
+          <h3 class="fs-56 vertical-text">Мешок с вкладышем</h3>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <div class="other-info">
+          <p class="mb-1 fw-300">
+            Компания «ТМПАК» производит мешки полипропиленовые с вкладышем,
+            которые применяются для упаковки таких сыпучих продуктов, как соль,
+            сахар, мука, комбикорм, различных химикатов, удобрений, асбеста и
+            так далее.
+          </p>
+          <p class="fw-b">
+            Помимо стандартных параметров, компания «ТМПАК» изготавливает
+            продукт в различных диапазонах по индивидуальному техническому
+            заданию, в зависимости от требований покупателя.
+          </p>
+          <div class="btn-group">
+            <a href="#pre-order" class="mr-1 btn">Оформить заказ</a>
+            <button class="btn-r" hreflang='ru'>Скачать цены</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="production third">
+      <div class="flex">
+        <div class="image first">
+          <img src="/img/04.jpg" alt="img" />
+          <h3 class="vertical-text">Рукав для БИГ БЭГ</h3>
+        </div>
+
+        <div class="info">
+          <div class="inner">
+            <div class="description">
+              <p class="fw-300">
+              Компания «ТМПАК» производит высококачественные рукава на
+              современном оборудовании, благодаря чему достигается однородность
+              плетения ткани.
+            </p>
+            <p class="fw-300">
+              Мешки из полипропиленового рукава не имеют боковых швов, рукав
+              легко кроится. Себестоимость изделий из полипропиленового рукава
+              невелика: экономичная упаковка нужна многим производителям.
+            </p>
+            <p class="fw-300">
+              Основное достоинство ткани – прочность.
+            </p>
+            <p class="fw-b">
+              Помимо стандартных параметров, компания «ТМПАК» изготавливает
+              продукт в различных диапазонах по индивидуальному техническому
+              заданию, в зависимости от требований покупателя.
+            </p>
+            </div>
+
+            <div class="information">
+          
+              <div class="mb-2">
+                <div class="fw-b fs-20">Диапозон ширины</div>
+                <p class="fw-300">от 1 до 2 метров</p>
+              </div>
+  
+              <div class="mb-2">
+                <div class="fw-b fs-20">Цвет</div>
+                <p class="fw-300">Белый</p>
+              </div>
+  
+              <div class="mb-2">
+                <div class="fw-b fs-20">Плотность</div>
+                <p class="fw-300">от 100 до 200 кг на м2</p>
+              </div>
+  
+              <div class="mb-2">
+                <div class="fw-b fs-20">Цена за кг</div>
+                <p class="fw-300">1.5 долл.США</p>
+              </div>
+            </div>
+            <div class="btn-group">
+              <a href="#pre-order" class="mr-1 btn">Оформить заказ</a>
+              <button class="btn-r" hreflang='ru'>Скачать цены</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="production fouth">
+      <div class="flex">
+        <div class="info">
+          <div class="inner">
+            <div class="description">
+              <p class="fw-300">
+              Высококачественный полипропиленовый шпагат (сеновязальный), изготовленный из первичного полипропилена. Эта разновидность шпагата широко используется в агросекторе для тюкования сена, соломы, зеленых кормов, а также для ручной и автоматической обмотки готовых рулонов и тюков.
+            </p>
+            <p class="fw-b">
+              Помимо стандартных параметров, компания «ТМПАК» изготавливает
+              продукт в различных диапазонах по индивидуальному техническому
+              заданию, в зависимости от требований покупателя.
+            </p>
+            </div>
+
+            <div class="information">
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Вес бобины</h5>
+                <p class="fs-16 fw-300">4-5 кг &plusmn;3%</p>
+              </div>
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Цена за тонну</h5>
+                <p class="fs-16 fw-300">1 360 долл. США</p>
+              </div>
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Длина нити</h5>
+                <p class="fs-16 fw-300">1 кг = макс. 555&nbsp;м</p>
+              </div>
+
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Плотность нити</h5>
+                <p class="fs-16 fw-300">18&nbsp;000 ДЕНЬЕ</p>
+              </div>
+
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Цвет</h5>
+                <p class="fs-16 fw-300">Белый</p>
+              </div>
+
+              <div class="mb-2">
+                <h5 class="fw-b fs-20">Грузоподъемность</h5>
+                <p class="fs-16 fw-300">98 кг</p>
+              </div>
+
+            </div>
+
+            <div class="btn-group">
+              <a href="#pre-order" class="mr-1 btn">Оформить заказ</a>
+              <button class="btn-r" hreflang='ru'>Скачать цены</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="/img/05.jpg" alt="img" />
+          <h3 class="vertical-text">ШПАГАТ</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- продукция -->
+
+    <!-- условия -->
+    <div class="container title">
+      <h2 class="fw-b fs-56" id="condition">УСЛОВИЯ</h2>
+      <h4 class="fw-300">Оплата и доставка</h4>
+    </div>
+
+    <section class="condition">
+      <img class="mainImage" src="/img/06.png" alt="img" />
+      <div class="text cl-white bg-black">
+        <h2>Компания «ТМПАК» организует доставку по всей России и странам СНГ</h2>
+
+        <div class="fs-18 h6">Общий минимальный вес товара допустимый к отправке – 22 тонны</div>
+
+        <div class="fs-18">
+          Возможно производство продукции по индивидуальному техническому
+          заданию, отличающемуся от стандартных параметров изделий, выпускаемых
+          компанией «ТМПАК»
+        </div>
+      </div>
+    </section>
+
+    <div class="container condition mt-1">
+      <div class="between">
+        <div class="jumbutron">
+          <div class="a-start">
+            <img src="/ui/bag.png" alt="bag" />
+            <h4>УСЛОВИЯ<br class="to-line"> ОПЛАТЫ</h4>
+          </div>
+          <p class="fs-18">После формирования заказа через менеджера компании, осуществляется предоплата в размере 50% от общей стоимости заказа</p>
+          <p class="fs-18">Оставшиеся 50% оплачиваются покупателем по окончании загрузки транспорта и отправки его к месту назначения</p>
+          <p class="fs-18">После заключения договора выставляется счет для безналичного расчета.</p>
+        </div>
+
+        <div class="jumbutron">
+          <div class="a-start">
+            <img src="/ui/bus.png" alt="bus" />
+            <h4>УСЛОВИЯ ДОСТАВКИ</h4>
+          </div>
+          <p class="fs-18">Условия доставки заказа могут отличаться в зависисмости от расстояния, объема и срочности</p>
+          <p class="fs-18">Сроки доставки согласовываются индивидуально</p>
+          <p class="fs-18">Доставка осуществляется с помощью транспортных компаний, согласно их тарифам</p>
+          <p class="fs-18">Можете заказать доставку в любой удобной для Вас транспортной компании</p>
+          <p class="fs-18">Условия доставки EXW и DAP</p>
+        </div>
+      </div>
+    </div>
+    <!-- условия -->
+
+    <!-- предзаказ -->
+    <section class="pre-order">
+      <div class="container title">
+        <div class="fw-b fs-56" id="pre-order">ПРЕДЗАКАЗ</div>
+        <h4 class="fs-26 fw-300">Заполнить форму и получить коммерческое предложение</h4>
+      </div>
+
+      <div class="jumbotron">
+        <form action="" method="POST" id="order_form">
+          <input id="first_name" placeholder="Имя" type="text" name="first_name" />
+          <input id="last_name" placeholder="Фамилия" type="text" name="last_name" />
+          <input id="email" placeholder="E-mail" type="E-mail" name="email" />
+          <div class="flex a-centr group">
+            <div class="tel">
+              <img src="/ui/pluse.png" alt="pluse" />
+              <select id="phone_prefix" class="select" name="phone_prefix">
+                <option selected value="7">7</option>
+                <option value="994">994</option>
+                <option value="373">373</option>
+                <option value="374">374</option>
+                <option value="375">375</option>
+                <option value="992">992</option>
+                <option value="993">993</option>
+                <option value="996">996</option>
+                <option value="380">380</option>
+                <option value="371">371</option>
+                <option value="998">998</option>
+                <option value="370">370</option>
+                <option value="372">372</option>
+              </select>
+            </div>
+
+            <input id="phone_number" class="mb-0" type="text" placeholder="Номер телефона" name="phone_number" />
+          </div>
+
+          <div class="flex group col">
+            <input id="country" class="mr-2" type="text" placeholder="Страна" name="country" />
+            <input id="city" type="text" placeholder="Город" name="city" />
+          </div>
+
+          <div class="fs-14 mb-2 lh-30">Отправить индивидуальное техническое задание, отличаемое от стандартных параметров, выпускаемой продукции, компанией «ТМПАК»</div>
+          <div class="cl-blue fs-16 fw-b">
+            <label for="file" class="fileText pointer">Выберите файл</label>
+            <input id="file" type="file" class="file pointer" name="file" />
+          </div>
+
+          <textarea id="message" placeholder="Написать" name="message"></textarea>
+
+          <button id="submit-form" form="order_form" type="reset" class="btn">Оформить заказ</button>
+        </form>
+      </div>
+    </section>
+    <!-- предзаказ -->
+
+    <footer>
+      <div class="container">
+        <div class="flex firstFlex">
+          <nav class="menu">
+            <!-- логотип -->
+            <div class="logo pointer">
+              <img src="/img/logo.png" alt="logo" />
+            </div>
+            <!-- логотип -->
+            <div class="fs-14 cl-white link">
+              <a href="#about">О КОМПАНИИ</a>
+            </div>
+            <div class="fs-14 cl-white link">
+              <a href="#production">ПРОДУКЦИЯ</a>
+            </div>
+            <div class="fs-14 cl-white link">
+              <a href="#condition">УСЛОВИЯ</a>
+            </div>
+            <div class="fs-14 cl-white link">
+              <a href="#pre-order">ПРЕДЗАКАЗ</a>
+            </div>
+          </nav>
+
+          <div class="contacts">
+            <div class="flex contact_item">
+              <div class="cl-blue fs-14">Адрес</div>
+              <div class="cl-white fs-14">
+                Туркменистан, Ашхабад, Анкара&nbsp;10
+              </div>
+            </div>
+
+            <div class="flex contact_item">
+              <div class="cl-blue fs-14">Телефон</div>
+              <div>
+                <div class="cl-white tel_num fs-14">+7 495 12700828</div>
+                <div class="cl-white tel_num fs-14">+993 12 491281</div>
+              </div>
+            </div>
+
+            <div class="flex contact_item">
+              <div class="cl-blue fs-14">Мобильный</div>
+              <div>
+                <div class="cl-white tel_num fs-14">+993 63 203339</div>
+                <div class="cl-white tel_num fs-14">+993 63 209339</div>
+                <div class="cl-white tel_num fs-14">+993 63 136556</div>
+              </div>
+            </div>
+
+            <div class="flex contact_item">
+              <div class="cl-blue fs-14">Факс</div>
+              <div class="cl-white fs-14">+993 12 491281</div>
+            </div>
+
+            <div class="flex contact_item">
+              <div class="cl-blue fs-14">E-mail</div>
+              <div class="cl-white fs-14">export@tmpack.biz</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container under mt-2 pt-2 a-centr between">
+        <div class="flex">
+          <a href="https://www.facebook.com/TMPack.biz" target="_balnk">
+            <img src="/social/facebook.png" alt="Facebook" title="Facebook" />
+          </a>
+          <a href="https://wa.me/qr/4SPRXY4SISPID1" target="_blank">
+            <img src="/social/whatsapp.png" alt="WhatsApp" title="WhatsApp" />
+          </a>
+          <a href="https://www.instagram.com/tmpack.biz/" target="_blank">
+            <img src="/social/instagram.png" alt="Instagram" title="Instagram" />
+          </a>
+        </div>
+
+        <div class="cl-grey_d fs-14">&copy; TMPACK, 2020</div>
+      </div>
+    </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/select.js  "></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+.fs- {
+  &56 {
+    @include afs(56px, 50px, 22px);
+    letter-spacing: 0.1em;
+  }
+  &36 {
+    @include afs(36px, 36px, 18px);
+  }
+  &30 {
+    @include afs(30px, 28px, 18px);
+    letter-spacing: 0.1em;
+  }
+  &26 {
+    @include afs(26px, 26px, 14px);
+  }
+  &20 {
+    @include afs(20px, 20px, 14px);
+  }
+  &18 {
+    @include afs(18px, 18px, 12px);
+    line-height: 30px;
+  }
+  &16 {
+    @include afs(16px, 16px, 12px);
+    line-height: 30px;
+  }
+  &14 {
+    @include afs(14px, 14px, 12px);
+    line-height: 30px;
+  }
+}
+// 56
+h1 {
+  @include afs(56px, 50px, 22px);
+  letter-spacing: 0.1em;
+}
+
+// 36
+h2 {
+  @include afs(36px, 36px, 18px);
+}
+
+// 30
+h3 {
+  @include afs(30px, 28px, 18px);
+}
+
+// 26
+h4 {
+  @include afs(26px, 26px, 14px);
+}
+
+// 20
+h5 {
+  @include afs(20px, 20px, 14px);
+}
+
+// 18
+h6 {
+  @include afs(18px, 18px, 12px);
+}
+
+// 16
+p {
+  @include afs(16px, 16px, 12px);
+  line-height: 30px;
+}
+
+.up {
+  text-transform: uppercase;
+}

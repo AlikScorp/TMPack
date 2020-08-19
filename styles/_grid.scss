@@ -1,0 +1,42 @@
+.flex {
+  display: flex;
+}
+
+.a- {
+  &centr {
+    display: flex;
+    align-items: center;
+  }
+  &start {
+    display: flex;
+    align-items: flex-start;
+  }
+  &end {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.j- {
+  &centr {
+    display: flex;
+    justify-content: center;
+  }
+  &start {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &end {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+}
